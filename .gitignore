@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Secrets and environment variables
+.env
+*.pem
+*.key
+
+# SQLite Database
+database/*.db
+database/*.sqlite3
+*.db
+*.sqlite3
+
+# Large Dataset Directories (keep directory structures with .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/uploads/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/train/*
+!data/train/.gitkeep
+data/val/*
+!data/val/.gitkeep
+data/test/*
+!data/test/.gitkeep
+
+# Checkpoints and Models
+artifacts/checkpoints/*.pth
+artifacts/checkpoints/*.pt
+!artifacts/checkpoints/.gitkeep
+
+# Generated Reports & Plots
+artifacts/reports/*.pdf
+!artifacts/reports/.gitkeep
+artifacts/plots/*.png
+!artifacts/plots/.gitkeep
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated
+.DS_Store
+Thumbs.db

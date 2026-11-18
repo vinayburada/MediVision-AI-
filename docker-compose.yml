@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # Streamlit Healthcare AI Web Dashboard
+  frontend:
+    build: .
+    container_name: medivision_streamlit
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - APP_ENV=production
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8000
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./database:/app/database
+    restart: unless-stopped
+
+  # FastAPI RESTful Microservice
+  backend:
+    build: .
+    container_name: medivision_fastapi
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - APP_ENV=production
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+      - ./database:/app/database
+    restart: unless-stopped
