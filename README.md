@@ -44,7 +44,6 @@ Deep learning models applied to medical radiography often suffer from a severe "
 - **Explainable AI (Grad-CAM):** Mathematical gradient-weighted activation mapping identifying penultimate layer spatial attention.
 - **Generative AI (Google Gemini):** Multi-modal LLM reasoning translating raw probabilities and spatial attention patterns into structured educational narratives.
 - **Publication-Grade Reporting:** Automated ReportLab PDF generator compiling side-by-side radiograph overlays, metadata tables, and clinical disclaimers.
-
 ---
 
 ## 🚀 Key Architecture & Features
