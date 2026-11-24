@@ -12,7 +12,7 @@
 > **⚠️ MANDATORY EDUCATIONAL RESEARCH DISCLAIMER:**  
 > MediVision AI is an experimental computer vision, explainable AI, and educational demonstration system developed strictly for academic, educational, and scientific research purposes. This software is **NOT** a certified medical diagnostic system and has **NOT** been evaluated or cleared by the US FDA, CE, CDSCO, or any international medical regulatory agency. It must **NEVER** be used to formulate medical diagnoses, establish clinical opinions, or direct patient treatment decisions. Always consult a licensed radiologist or healthcare professional for diagnostic care.
 
----
+
 
 ## 📑 Table of Contents
 1. [Project Overview](#-project-overview)
