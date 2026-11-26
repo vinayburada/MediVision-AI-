@@ -472,7 +472,6 @@ git remote add origin https://github.com/<your-username>/MediVision-AI.git
 # 6. Push to GitHub
 git push -u origin main
 ```
-
 ---
 
 ## ⚖️ Limitations & Bioethical Considerations
